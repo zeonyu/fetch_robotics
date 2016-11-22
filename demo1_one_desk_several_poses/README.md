@@ -37,11 +37,6 @@ arm的操作使用moveit中的`moveit::planning_interface::MoveGroup`类来进�
 
 （moveit教程这里还有一点问题，还不知道具体如何控制）
 
-## server 和 client 应该如何架构
+## 参考 gazebo_simulation
 
-考虑现在需要两对server\client，分别是movebase和moveit。其中movebase的server
-
-morne# 参考 gazebo_simulation
-
-如林涛所说，gazebo_simulation的逻辑就是，打开gotopose_main.py，是一个服务器，里面定义了运动控制的逻辑。而cpp代码的pr2_client.cpp则是一个client，定义了一些发送goal，接受server反馈的一些功能，然后写了一个main函数，使其执行spin等操作。client一般不写spin和callback，但是这里其实是用这个callback去得到点云的实时反馈，因此我们的程序中不用考虑。
-
+如林涛所说，gazebo_simulation的逻辑就是，打开gotopose_main.py，是一个服务器，里面定义了运动控制的逻辑。而cpp代码的pr2_client.cpp则是一个client，定义了一些
