@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -march=native -mno-avx   -shared -Wl,-soname,libUtils.so -o libUtils.so CMakeFiles/Utils.dir/FileUtils.cpp.o -lpng -lz 

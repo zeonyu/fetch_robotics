@@ -1,0 +1,12 @@
+#goal definition
+float32[] position 
+
+---
+
+#result definition
+bool success
+
+---
+
+#feedback definition
+float32  completeness

@@ -1,0 +1,8 @@
+prefix=/home/zeon/catkin_ws/src/ros_infiniTAM/build/devel
+
+Name: ros_infiniTAM
+Description: Description of ros_infiniTAM
+Version: 0.0.0
+Cflags: -I/home/zeon/catkin_ws/src/ros_infiniTAM/build/devel/include -I/home/zeon/catkin_ws/src/ros_infiniTAM/include
+Libs: -L/home/zeon/catkin_ws/src/ros_infiniTAM/build/devel/lib -lros_infiniTAM
+Requires: cv_bridge message_filters actionlib roscpp sensor_msgs roslib

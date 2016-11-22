@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/zeon/catkin_ws/src/ros_infiniTAM/build/devel/setup.sh

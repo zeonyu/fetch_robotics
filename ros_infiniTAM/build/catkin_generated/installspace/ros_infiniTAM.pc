@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: ros_infiniTAM
+Description: Description of ros_infiniTAM
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lros_infiniTAM
+Requires: cv_bridge message_filters actionlib roscpp sensor_msgs roslib

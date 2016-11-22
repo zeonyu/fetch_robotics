@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -march=native -mno-avx   -shared -Wl,-soname,libORUtils.so -o libORUtils.so CMakeFiles/ORUtils.dir/Dummy.cpp.o 
