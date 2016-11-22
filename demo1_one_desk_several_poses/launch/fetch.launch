@@ -1,0 +1,18 @@
+<launch>
+
+  <!-- Start Gazebo with fetch_arm_kinect -->
+  <include file="$(find demo1_one_desk_several_poses)/launch/utils/simulation.launch"/>
+ 
+  <!-- Start navigation -->
+  <include file="$(find demo1_one_desk_several_poses)/launch/utils/fetch_nav.launch"/>
+
+  <!-- Start moveit! -->
+  <include file="$(find demo1_one_desk_several_poses)/launch/utils/move_group.launch"/>
+
+  <!-- image_view on hand kinect -->
+  <!-- 
+    rosrun image_view image_view image:=/arm_camera/rgb/image_raw 
+  -->
+  <!-- node name="image_view_hand_kinect" pkg="image_view" type="image_view" args="image:=/arm_camera/rgb/camera_info" /-->
+
+</launch>
